@@ -1,9 +1,9 @@
-#include "AddFireingRate.h"
+#include "AddFiringRate.h"
 #include "SpaceShip.h"
 #include "GameFrame.h"
 #include <string>
 
-AddFireingRate::AddFireingRate(
+AddFiringRate::AddFiringRate(
         GameFrame &gameFrame,
         bool allowAnti,
         sf::Time lifeTime,

@@ -1,5 +1,5 @@
 CC := g++
-CFLAGS := -std=c++17 -Wall -Wextra -Wpedantic -Weffc++ -g -O2
+CFLAGS := -std=c++17 -Wall -Wextra -Wpedantic -Weffc++ -g -O2 -I.
 LDFLAGS := -L${SFML_ROOT}/lib -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
 OBJFILES = $(patsubst %.cc,%.o,$(wildcard *.cc))
 HEADERFILES = $(wildcard *.h) $(wildcard.hpp)

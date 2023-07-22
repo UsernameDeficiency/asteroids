@@ -6,14 +6,14 @@
 	     █████████║  ██║  ██║  ██╚██████╔╝████████╔╝    ██║ ╚██████╔╝
 	     ╚═╚══════╝  ╚═╝  ╚═╝  ╚═╝╚═════╝ ╚═╚═════╝     ╚═╝  ╚═════╝
 		                                                                            
-Version: Release 1.02
+Version: Release 1.03
 ------------------------------USER MANUAL---------------------------------------
 Avoid the asteroids to survive as long as possible. Use the power-ups to your
 advantage. In multiplayer some Power-Ups will affect the other player in a 
 bad way. Navigate the start menu with Up and Down and select with Return.
 
 Keymap player 1:
-Accelerate......UP
+Accelerate......Up
 Turn left.......Left
 Turn right......Right
 Shoot...........L

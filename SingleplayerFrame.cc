@@ -8,7 +8,7 @@
 #include "SpeedChange.h"
 #include "SizeChange.h"
 #include "Invert.h"
-#include "AddFireingRate.h"
+#include "AddFiringRate.h"
 #include "AddBarrels.h"
 #include <cmath>
 #include <SFML/Graphics.hpp>
