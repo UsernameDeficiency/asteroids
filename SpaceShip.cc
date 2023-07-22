@@ -93,7 +93,7 @@ bool SpaceShip::iterate()
         shoot();
     }
 
-    // Handle movement and deacceleration.
+    // Handle movement and deceleration.
     xSpeed /= DEFAULT_SHIP_BREAK_COEFF;
     ySpeed /= DEFAULT_SHIP_BREAK_COEFF;
     move(xSpeed, ySpeed);
@@ -140,7 +140,7 @@ void SpaceShip::shoot()
     sf::Time firePeriod = sf::seconds(1.0f/fireRate);
     if(coolDown.getElapsedTime() > firePeriod)
     {
-        // Aquire parameters.
+        // Acquire parameters.
         std::function<float(float)> sqr = [](float x)->float { return x * x; };
         float x = getPosition().x;
         float y = getPosition().y;

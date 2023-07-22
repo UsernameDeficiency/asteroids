@@ -62,7 +62,7 @@ void MultiplayerFrame::spawnPowerUp()
     }
     if (randomNumber == 3)
     {
-        addEntity(std::make_unique<AddFireingRate>(*this, true, powerUpLifeTime));
+        addEntity(std::make_unique<AddFiringRate>(*this, true, powerUpLifeTime));
     }
     if (randomNumber == 4)
     {
