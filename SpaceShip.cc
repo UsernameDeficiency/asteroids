@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #include "GameFrame.h"
 #include "TextureHandler.h"
 #include "SpaceShip.h"
@@ -181,9 +182,9 @@ int SpaceShip::getId() const
     return id;
 }
 
-void SpaceShip::addWeaponAttributes(float fireingRateToAdd, int extraBarrelsToAdd)
+void SpaceShip::addWeaponAttributes(float firingRateToAdd, int extraBarrelsToAdd)
 {
-    fireRate += fireingRateToAdd;
+    fireRate += firingRateToAdd;
     extraBarrels += extraBarrelsToAdd;
 }
 

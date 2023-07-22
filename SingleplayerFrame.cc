@@ -58,6 +58,6 @@ void SingleplayerFrame::spawnPowerUp()
     }
     if (randomNumber == 3)
     {
-        addEntity(std::make_unique<AddFireingRate>(*this, false, powerUpLifeTime));
+        addEntity(std::make_unique<AddFiringRate>(*this, false, powerUpLifeTime));
     }
 }

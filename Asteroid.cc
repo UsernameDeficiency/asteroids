@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #include "Asteroid.h"
 #include "Projectile.h"
 #include "GameFrame.h"

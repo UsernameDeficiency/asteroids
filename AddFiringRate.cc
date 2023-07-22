@@ -14,24 +14,24 @@ AddFiringRate::AddFiringRate(
     if (anti)
     {
         file = "Images/PowerUps/RPM-.png";
-        fireingrate = -DEFAULT_SHIP_FIRE_RATE/1.5;
+        firingrate = -DEFAULT_SHIP_FIRE_RATE/1.5;
     }
     else
     {
         file = "Images/PowerUps/RPM+.png";
-        fireingrate = 10.0f;
+        firingrate = 10.0f;
     }
     setTexture(gameFrame.textureHandler.getTexture(file));
     setScale(0.5f, 0.5f);
     setRandomPosition();
 }
 
-void AddFireingRate::activate(SpaceShip &ship) const
+void AddFiringRate::activate(SpaceShip &ship) const
 {
-    ship.addWeaponAttributes(fireingrate, 0.0f);
+    ship.addWeaponAttributes(firingrate, 0.0f);
 }
 
-void AddFireingRate::deactivate(SpaceShip &ship) const
+void AddFiringRate::deactivate(SpaceShip &ship) const
 {
-    ship.addWeaponAttributes(-fireingrate, 0.0f);
+    ship.addWeaponAttributes(-firingrate, 0.0f);
 }

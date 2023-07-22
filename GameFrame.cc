@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #include "Frame.h"
 #include "GameFrame.h"
 #include "SpaceShip.h"
