@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.17)
 project(Space_Offender___CMake)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
+#include_directories(${SFML_INCLUDE_DIR})
 include_directories(.)
 include_directories(SFML)
 include_directories(SFML/Audio)
@@ -10,7 +11,13 @@ include_directories(SFML/Graphics)
 include_directories(SFML/Network)
 include_directories(SFML/System)
 include_directories(SFML/Window)
+include_directories(SFML/include)
 
+## For static SFML
+#set(SFML_STATIC_LIBRARIES TRUE)
+set(SFML_DIR "SFML/lib/cmake/SFML")
+
+find_package(SFML 2.5 COMPONENTS graphics audio system window REQUIRED)
 add_executable(Space_Offender___CMake
         SFML/Audio/AlResource.hpp
         SFML/Audio/Export.hpp
@@ -157,3 +164,5 @@ add_executable(Space_Offender___CMake
         StartFrame.h
         TextureHandler.cc
         TextureHandler.h)
+#target_link_libraries(Space_Offender___CMake ${SFML_LIBRARIES})
+target_link_libraries(Space_Offender___CMake sfml-graphics sfml-audio sfml-system sfml-window)

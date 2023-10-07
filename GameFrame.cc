@@ -10,7 +10,7 @@
 #include <cmath>
 #include <cstdlib>
 
-// Render method for drawing all 'Frame' assiciated objects to the screen.
+// Render method for drawing all 'Frame' associated objects to the screen.
 // This method should not alter the state of the frame.
 void GameFrame::render(sf::RenderWindow &window) const
 {
@@ -76,7 +76,7 @@ void GameFrame::frameHandleCollision()
         for (auto remIt = it+1; remIt != entities.end(); ++remIt)
         {
             Entity &curEntity = **it;       // Current entitiy.
-            Entity &remEntity = **remIt;    // Remainding entitiy.
+            Entity &remEntity = **remIt;    // Remaining entitiy.
             if (curEntity.testCollision(remEntity))
             {
                 curEntity.handleCollision(remEntity);
@@ -136,7 +136,7 @@ void GameFrame::frameIterateEntities()
     }
 
     // Remove all the entities that should be removed. The entieies with the
-    // greates index should be removed first to keep the all the indexes valid
+    // greatest index should be removed first to keep the all the indexes valid
     // throughout the erasing.
     auto inverter = [](size_t a, size_t b)->bool{ return a > b; };
     std::sort(removeEntities.begin(), removeEntities.end(), inverter);
@@ -151,7 +151,7 @@ void GameFrame::frameIterateEntities()
     }
 
     // Add all the new entities from the buffer container to the 'real'
-    // container. Here we separate the asteroids from the ohter entities.
+    // container. Here we separate the asteroids from the other entities.
     while (!entitiesBuffer.empty())
     {
         auto current = entitiesBuffer.end() - 1;
@@ -242,7 +242,7 @@ void GameFrame::spawnAsteroid(float asteroidSpeed)
     );
 }
 
-// Method for getting the first spaceship in the gameframe whos spaceship
+// Method for getting the first spaceship in the gameframe whose spaceship
 // tag is not equal to the tag in the spaceship in parameter.
 SpaceShip *GameFrame::getOtherSpaceShip(const SpaceShip *other)
 {

@@ -31,7 +31,7 @@ public:
     // duration. In any other case this method should return a null-pointer.
     virtual Frame* iterate() = 0;
 
-    // Render method for drawing all 'Frame' assiciated objects to the screen.
+    // Render method for drawing all 'Frame' associated objects to the screen.
     // This method should not alter the state of the frame.
     void render(sf::RenderWindow &window) const override;
 

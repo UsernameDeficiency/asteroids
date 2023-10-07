@@ -1,7 +1,7 @@
 /*
  * Parentclass: Entity
  * Asteroid is initiatied by SingleplayerFrame or MultiplayerFrame. If it collides
- * with a projektil two more asteroids will spawn in its place if it's size is 
+ * with a projectile two more asteroids will spawn in its place if its size is 
  * above 0
  */
 

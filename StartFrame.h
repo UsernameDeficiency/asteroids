@@ -23,8 +23,7 @@ public:
   StartFrame(const StartFrame &other) = delete;
   StartFrame &operator=(const StartFrame &other) = delete;
 
-
-  // This function handels all the drawing to the window
+  // Handles all drawing to the window
   void render(sf::RenderWindow &window) const override;
 
   // This function updates objects that move.
@@ -37,8 +36,8 @@ public:
   void handleEvent(const sf::Event &event) override;
 private:
 
-  // To make the code more modular render calls these 3 functions handle the
-  // rendering for the three diffrent states of the StartFrame..
+  // To make the code more modular render() calls these 3 functions to handle
+  // the rendering for the three different states of the StartFrame.
   void renderStart(sf::RenderWindow &window) const;
   void renderSingle(sf::RenderWindow &window) const;
   void renderMulti(sf::RenderWindow &window) const;
@@ -55,14 +54,14 @@ private:
   void selectPosition();
 
   // To make the code more modullar selectPosition calls upon one of three
-  // functions depending on the value of int state
+  // functions depending on the value of int state.
   void titleSelectPosition();
   void singleSelectPosition();
   void multiSelectPosition();
 
   // This functions loads all the sprites and textures. It also change the
   // settings one these sprites. LoadSprites calls upon functions that loads
-  // specific sprites seperatly, one in this case............
+  // specific sprites seperatly, one in this case.
   void loadSprites();
 
   // loads the background sprite and change the settings of it.
@@ -72,7 +71,7 @@ private:
   void loadText();
 
   // All the Text objects gets loaded seperatly. They get font position, size,
-  // etc
+  // etc.
   void loadTitle();
   void loadSingle();
   void loadMulti();
@@ -86,17 +85,17 @@ private:
 
   // Member fields
 
-  // Position of the "selectbar" where 0 is the Text highest up on the screen.
+  // Position of the "select bar" where 0 is the Text highest up on the screen.
   int position{};
 
   // Start, singleplayer, multiplayer or quit? [0, 1, 2, 3]
   int state{};
 
-  //Dimensions of the Window at start.
+  // Dimensions of the Window at start.
   const int WIDTH {};
   const int HEIGHT {};
 
-  // variables for making the background spinn.
+  // Variables for making the background spin.
   float backgroundAngle {};
   float backgroundAngleMomentum {0.01};
 
@@ -106,7 +105,7 @@ private:
   sf::Texture backgroundTexture{};
   sf::Texture backgroundTexture2{};
 
-  //text and fonts
+  // Text and fonts.
   sf::Font font{};
   sf::Text title{};
   sf::Text singlePlayer{};
@@ -115,14 +114,14 @@ private:
   sf::Text start{};
   sf::Text back{};
 
-  // rectangle and its color
+  // Rectangle and its color.
   sf::RectangleShape selected{};
   sf::Color color {0, 255, 175, 130};
 
-  //music
+  // Music.
   sf::Music music{};
 
-  //Frame pointer.
+  // Frame pointer.
   Frame *nextFrame{nullptr};
 
   // Wait timer.

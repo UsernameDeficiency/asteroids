@@ -52,7 +52,7 @@ bool Asteroid::iterate()
     }
 
     // Play death animation when hit by a projectile. When animation has played
-    // the asteroid is destroyd.
+    // the asteroid is destroyed.
     if (beenHit)
     {
         if (!deathAnimation.testComplete())
@@ -73,7 +73,7 @@ void Asteroid::handleCollision(const Entity &other)
     // Collision with projectile.
     if (dynamic_cast<const Projectile *>(&other))
     {
-        //Asteroids with size > 0 is split into two smaller asteroids.
+        // Asteroids with size > 0 is split into two smaller asteroids.
         if (size > 0)
         {
             float rotation = M_PI/4;

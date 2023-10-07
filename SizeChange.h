@@ -37,7 +37,6 @@ public:
 private:
     float scale{};
     std::string file{};
-
 };
 
 #endif

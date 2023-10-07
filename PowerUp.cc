@@ -46,7 +46,7 @@ sf::Time PowerUp::timeLeft() const
 {
     if (!isActive)
     {
-        // Power up hasn't been activated. Return time untill it gets destroyed.
+        // Power up hasn't been activated. Return time until it gets destroyed.
         return lifeTime - timer.getElapsedTime();
     }
     else
@@ -64,8 +64,8 @@ bool PowerUp::iterate()
         if (isActive)
         {
             // When the power is no longer active we wait one extra iteration
-            // before we destroy it. This will guarantie that the spaceship that
-            // has aquiered the power up will have it removed from its 'active
+            // before we destroy it. This will guarantee that the spaceship that
+            // has acquired the power up will have it removed from its active
             // power up.
             isAlive = !extraIterationDone;
             extraIterationDone = true;

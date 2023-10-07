@@ -32,8 +32,8 @@ public:
 
     /*
      * Method for iterating the 'Entity'. This method will be called one time
-     * each iteration in the 'game-loop'. This method should return true if it
-     * wants to be destroyed after iterating kand false otherwise.
+     * each iteration in the 'game-loop'. Returns true if it wants to be
+     * destroyed after iterating and false otherwise.
      */
     bool iterate() override;
 
@@ -57,7 +57,7 @@ public:
     virtual void deactivate(SpaceShip &ship) const = 0;
 
     /*
-     *Sets the position to a random point on the screen.
+     * Sets the position to a random point on the screen.
      */
     void setRandomPosition();
 

@@ -24,7 +24,7 @@ Projectile::Projectile(float x, float y, float speed, float rotation, GameFrame 
 
 bool Projectile::iterate()
 {
-    //Checks if projectile is outside frame
+    // Checks if projectile is outside frame.
     move(xSpeed, ySpeed);
     if ( (getPosition().x > SCREEN_WIDTH + DEFAULT_BLIND_SPOT)  ||
          (getPosition().x < 0 - DEFAULT_BLIND_SPOT)             ||

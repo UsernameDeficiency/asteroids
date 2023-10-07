@@ -11,7 +11,7 @@
 class Animation
 {
 public:
-    // Deafult constructor and destructor.
+    // Default constructor and destructor.
     Animation(const std::string &directory, TextureHandler &handler);
     ~Animation() = default;
 

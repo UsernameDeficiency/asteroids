@@ -297,8 +297,8 @@ void StartFrame::multiSelectPosition()
 
 void StartFrame::handleEvent(const sf::Event &event)
 {
-    // Wait a tiny tiny amount of time before we handle the first event, so 
-    // the user dont accidentaly selects something.
+    // Wait a small amount of time before we handle the first event, so 
+    // the user doesn't accidentally select something.
     if (waitTimer.getElapsedTime() < sf::milliseconds(300))
     {
         return;

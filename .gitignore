@@ -1,4 +1,4 @@
 *.o
-SFML/
+SFML*/
 .idea/
 cmake*/

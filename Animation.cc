@@ -3,12 +3,12 @@
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/System.hpp>
 #include <fstream>
-#include <stdexcept> // Implement out own exception instead.
+#include <stdexcept> // TODO: Implement our own exception instead.
 
 Animation::Animation(const std::string &directory, TextureHandler &handler)
     : textureHandler(handler)
 {
-    // Try to load the animaiton images from file into (video) memory. The files
+    // Try to load the animation images from file into (video) memory. The files
     // in the animation directory should be named: (1.png, 2.png, ...) and this
     // animation class will display them in order when playing.
     unsigned currentNr = 1;

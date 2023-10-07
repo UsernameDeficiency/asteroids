@@ -1,5 +1,5 @@
 /*
- * Exception used in the asteroids game. Acts more or less like the a slimed 
+ * Exception used in the asteroids game. Acts more or less like the a slimmed 
  * down version of the standard library exceptions.
  */
 

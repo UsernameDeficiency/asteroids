@@ -153,7 +153,7 @@ void SpaceShip::shoot()
         gameFrame.addEntity(
                 std::make_unique<Projectile>(x, y, speed, rotation, gameFrame));
 
-        // Shot one extra projectile one both sides for each extra barrel.
+        // Shoot one extra projectile on both sides for each extra barrel.
         for (int barrel = 1; barrel <= extraBarrels; barrel++ )
         {
             xSpeed -= 2*recoil*cos(rotation/180*M_PI);

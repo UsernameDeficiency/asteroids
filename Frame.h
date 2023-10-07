@@ -1,7 +1,7 @@
 /*
  * Base class for a 'frame' or a 'game state'. Using frames makes it very easy
  * to swap between different parts of the game, ex swap between main menu and
- * the acctuall game. All 'game states' should inherit from 'Frame'.
+ * the actual game. All 'game states' should inherit from 'Frame'.
  */
 
 #ifndef _FRAME_H
